@@ -1,0 +1,62 @@
+@Library('openshift-library') _
+
+openshift.withCluster() {
+  env.APP_NAME = "omnipro-csstheme"
+  env.SBX_ENV = openshift.project()
+  env.ARTIFACT_DIRECTORY = "build"
+}
+
+
+pipeline {
+
+  agent { label 'nodejs' }
+
+  stages {
+
+    stage('SCM Checkout') {
+      steps {
+        checkout scm
+      }
+    }
+	
+/*    stage('Copying files to Static') {
+      steps {
+	  script{
+		sh'./gradlew frntndfromnexus'
+		sh 'mkdir extractfrntnd'
+		sh 'mkdir static'
+      	sh 'cd ./frntnd && tar zxvf resomnipro-custdashboardfr-*.tgz -C ../extractfrntnd'
+		}
+		}
+    }*/
+
+    stage('Build') {
+      steps {
+	     script {
+          sh """
+			npm i
+			npm run build
+            cd .
+			mkdir static
+			mkdir build
+			cp -R dist/css-themes-example/** static/
+            cp -R static/** build/
+            cp -R config/nginx.conf build/
+            """
+        }
+      }
+    }
+
+
+    stage('Image Build') {
+      steps {
+        binaryBuild(projectName: "${SBX_ENV}", buildConfigName: "${APP_NAME}", artifactsDirectoryName: "${ARTIFACT_DIRECTORY}")
+      }
+    }
+ stage ("Verify Deployment") {
+        steps {
+            verifyDeployment(projectName: "${SBX_ENV}", targetApp: "${APP_NAME}")
+        }
+    }
+  }
+}
