@@ -1,0 +1,247 @@
+/*** Hedaers ***/
+h1 {
+    font-family: 'Light', 'Lato', 'Roboto';
+    font-size: 50px;
+}
+h2 {
+    font-family: 'Book', 'Lato', 'Roboto';
+    font-size: 30px;
+}
+h3 {
+    font-family: 'Medium', 'Lato', 'Roboto';
+    font-size: 30px;
+    
+}
+h4 {
+    font-family: 'Book', 'Lato', 'Roboto';
+    font-size: 22px;
+}
+h5 {
+    font-family: 'Medium', 'Lato', 'Roboto';
+    line-height: normal;
+    font-size: 18px;
+}
+h6 {
+    font-family: 'Semibold', 'Lato', 'Roboto';
+    line-height: normal;
+    font-size: 11px;
+    
+}
+
+.tab-h1 {
+    font-family: 'Light', 'Lato', 'Roboto';
+    font-size: 50px;
+}
+
+.tab-h3 {
+    font-family: 'Medium', 'Lato', 'Roboto';
+    font-size: 26px;
+    
+}
+.tab-h4 {
+    font-family: 'Book', 'Lato', 'Roboto';
+    font-size: 24px;
+}
+.tab-h5 {
+    font-family: 'Medium', 'Lato', 'Roboto';
+    line-height: normal;
+    font-size: 18px;
+}
+.tab-h6 {
+    font-family: 'Semibold', 'Lato', 'Roboto';
+    line-height: normal;
+    font-size: 12px;
+    
+}
+
+/*** Font Families - Body Copy 1 ***/
+.font-medium {
+    font-family: 'Medium', 'Lato', 'Roboto';
+    font-size: 12px;
+}
+.font-med-italic {
+    font-family: 'Medium-Italic', 'Lato', 'Roboto';
+    font-size: 12px;
+}
+.font-semibold {
+    font-family: 'Semibold', 'Lato', 'Roboto';
+    font-size: 12px;
+}
+
+
+/*** Body Labels ***/
+.label-1 {
+    font-size: 14px
+}
+.label-2 {
+    
+    font-size: 12px
+}
+.label-3 {
+    font-size: 12px
+}
+.label-4 {
+    
+    font-size: 11px
+}
+.label-5 {
+    font-size: 11px
+}
+.label-6 {
+    font-size: 10px
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+//CSS
+
+}
+
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+//CSS
+
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    h1 {
+        font-family: 'Light', 'Lato', 'Roboto';
+        font-size: 50px;
+    }
+    
+    h3 {
+        font-family: 'Medium', 'Lato', 'Roboto';
+        font-size: 26px;
+        
+    }
+    h4 {
+        font-family: 'Book', 'Lato', 'Roboto';
+        font-size: 24px;
+    }
+    h5 {
+        font-family: 'Medium', 'Lato', 'Roboto';
+        line-height: normal;
+        font-size: 18px;
+    }
+    h6 {
+        font-family: 'Semibold', 'Lato', 'Roboto';
+        line-height: normal;
+        font-size: 12px;
+        
+    }
+
+    .font-medium {
+        font-family: 'Medium', 'Lato', 'Roboto';
+        font-size: 12px;
+    }
+    .font-med-italic {
+        font-family: 'Medium-Italic', 'Lato', 'Roboto';
+        font-size: 12px;
+    }
+    .font-semibold {
+        font-family: 'Semibold', 'Lato', 'Roboto';
+        font-size: 12px;
+    }
+    
+    .label-1 {
+        font-size: 16px
+    }
+    .label-3 {
+        font-size: 14px
+    }
+
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    h1 {
+        font-family: 'Light', 'Lato', 'Roboto';
+        font-size: 50px;
+    }
+    
+    h3 {
+        font-family: 'Medium', 'Lato', 'Roboto';
+        font-size: 26px;
+        
+    }
+    h4 {
+        font-family: 'Book', 'Lato', 'Roboto';
+        font-size: 24px;
+    }
+    h5 {
+        font-family: 'Medium', 'Lato', 'Roboto';
+        line-height: normal;
+        font-size: 18px;
+    }
+    h6 {
+        font-family: 'Semibold', 'Lato', 'Roboto';
+        line-height: normal;
+        font-size: 12px;
+        
+    }
+
+    .font-medium {
+        font-family: 'Medium', 'Lato', 'Roboto';
+        font-size: 12px;
+    }
+    .font-med-italic {
+        font-family: 'Medium-Italic', 'Lato', 'Roboto';
+        font-size: 12px;
+    }
+    .font-semibold {
+        font-family: 'Semibold', 'Lato', 'Roboto';
+        font-size: 12px;
+    }
+
+    .label-1 {
+        font-size: 16px
+    }
+    .label-3 {
+        font-size: 14px
+    }
+
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+//CSS
+
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+//CSS
+
+}

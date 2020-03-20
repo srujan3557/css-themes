@@ -1,0 +1,189 @@
+/*** Fonts Family ***/
+@font-face {
+    font-family: 'Black';
+    src: url('assets/fonts/Whitney-Black-Bas.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Black-Italic';
+    src: url('assets/fonts/Whitney-BlackItal-Bas.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('assets/fonts/Whitney-Bold-Bas.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bold-Italic';
+    src: url('assets/fonts/Whitney-BoldItal-Bas.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Book';
+    src: url('assets/fonts/Whitney-Book-Bas.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Book-Italic';
+    src: url('assets/fonts/Whitney-BookItal-Bas.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url('assets/fonts/Whitney-Light-Bas.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Light-Italic';
+    src: url('assets/fonts/Whitney-LightItal-Bas.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url('assets/fonts/Whitney-Medium-Bas.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Medium-Italic';
+    src: url('assets/fonts/Whitney-MediumItal-Bas.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Semibold';
+    src: url('assets/fonts/Whitney-Semibold-Bas.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Semibold-Italic';
+    src: url('assets/fonts/Whitney-SemiboldItal-Bas.otf') format('truetype');
+}
+
+
+/** Font Sizes **/
+
+// Extra Small
+.font-xs {
+    font-size: var(--font-xs);
+}
+.font-xs-100 {
+    font-size: var(--font-xs-100);
+}
+.font-xs-200 {
+    font-size: var(--font-xs-200);
+}
+.font-xs-300 {
+    font-size: var(--font-xs-300);
+}
+.font-xs-400 {
+    font-size: var(--font-xs-400);
+}
+
+// Small
+.font-sm {
+    font-size: var(--font-sm);
+}
+.font-sm-100 {
+    font-size: var(--font-sm-100);
+}
+.font-sm-200 {
+    font-size: var(--font-sm-200);
+}
+.font-sm-300 {
+    font-size: var(--font-sm-300);
+}
+.font-sm-400 {
+    font-size: var(--font-sm-400);
+}
+
+// Medium Chart
+.font-md {
+    font-size: var(--font-md);
+}
+.font-md-100 {
+    font-size: var(--font-md-100);
+}
+.font-md-200 {
+    font-size: var(--font-md-200);
+}
+.font-md-300 {
+    font-size: var(--font-md-300);
+}
+.font-md-400 {
+    font-size: var(--font-md-400);
+}
+.font-md-500 {
+    font-size: var(--font-md-500);
+}
+.font-md-600 {
+    font-size: var(--font-md-600);
+}
+
+// Large Chart
+.font-lg {
+    font-size: var(--font-lg);
+}
+.font-lg-100 {
+    font-size: var(--font-lg-100);
+}
+.font-lg-200 {
+    font-size: var(--font-lg-200);
+}
+.font-lg-300 {
+    font-size: var(--font-lg-300);
+}
+.font-lg-400 {
+    font-size: var(--font-lg-400);
+}
+.font-lg-500 {
+    font-size: var(--font-lg-500);
+}
+.font-lg-600 {
+    font-size: var(--font-lg-600);
+}
+
+// Extra Large Chart
+.font-xl {
+    font-size: var(--font-xl);
+}
+.font-xl-100 {
+    font-size: var(--font-xl-100);
+}
+.font-xl-200 {
+    font-size: var(--font-xl-200);
+}
+.font-xl-300 {
+    font-size: var(--font-xl-300);
+}
+.font-xl-400 {
+    font-size: var(--font-xl-400);
+}
+.font-xl-500 {
+    font-size: var(--font-xl-500);
+}
+.font-xl-600 {
+    font-size: var(--font-xl-600);
+}
+
+// Super Extra Large Chart
+.font-xxl {
+    font-size: var(--font-xxl);
+}
+.font-xxl-100 {
+    font-size: var(--font-xxl-100);
+}
+.font-xxl-200 {
+    font-size: var(--font-xxl-200);
+}
+.font-xxl-300 {
+    font-size: var(--font-xxl-300);
+}
+.font-xxl-400 {
+    font-size: var(--font-xxl-400);
+}
+.font-xxl-500 {
+    font-size: var(--font-xxl-500);
+}
+.font-xxl-600 {
+    font-size: var(--font-xxl-600);
+}

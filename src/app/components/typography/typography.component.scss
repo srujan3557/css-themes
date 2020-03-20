@@ -1,0 +1,19 @@
+#typography {
+
+    .typography-h3 {
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+    }
+
+    .typography-h1 {
+        margin-bottom: 20px;
+    }
+
+    .title {
+        color: var(--primaryColor-300);
+        background: var(--primaryColor-100);
+        margin: 0;
+        padding: 20px;
+        border-left: 7px solid;
+    }
+}

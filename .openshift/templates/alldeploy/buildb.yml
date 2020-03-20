@@ -1,0 +1,116 @@
+---
+apiVersion: v1
+kind: Template
+labels:
+  template: omnipro-custfrnt
+metadata:
+  annotations:
+    iconClass: icon-nginx
+    tags: quickstart,nginx
+  name: omnipro-custfrnt
+objects:
+- apiVersion: v1
+  kind: ImageStream
+  metadata:
+    annotations:
+      description: Keeps track of changes in the application image
+    name: "${APPLICATION_NAME}"
+    namespace: "${NAMESPACE}"
+- apiVersion: v1
+  kind: BuildConfig
+  metadata:
+    annotations:
+      description: Defines how to build the application
+      template.alpha.openshift.io/wait-for-ready: 'true'
+    name: "${APPLICATION_NAME}"
+  spec:
+    output:
+      to:
+        kind: ImageStreamTag
+        name: "${APPLICATION_NAME}:latest"
+        namespace: "${NAMESPACE}"
+    source:
+      git:
+        ref: "${SOURCE_REPOSITORY_REF}"
+        uri: "${SOURCE_REPOSITORY_URL}"
+      type: Git
+    strategy:
+      sourceStrategy:
+        from:
+          kind: ImageStreamTag
+          name: nginx:${NGINX_VERSION}
+          namespace: "openshift"
+      type: Source
+- kind: BuildConfig
+  apiVersion: v1
+  metadata:
+    labels:
+      application: ${APPLICATION_NAME}
+    name: ${APPLICATION_NAME}-bpipeline
+    namespace: ${NAMESPACE}
+  spec:
+    source:
+      type: Git
+      git:
+        uri: ${SOURCE_REPOSITORY_URL}
+        ref: ${SOURCE_REPOSITORY_REF}
+    triggers:
+    - type: ConfigChange
+    - gitlab:
+        secretReference:
+          name: gitlabsecret
+      type: GitLab
+    strategy:
+      type: JenkinsPipeline
+      jenkinsPipelineStrategy:
+        jenkinsfilePath: ${PIPELINE_SCRIPT}
+- kind: BuildConfig
+  apiVersion: v1
+  metadata:
+    labels:
+      application: ${APPLICATION_NAME}
+    name: ${APPLICATION_NAME}-dvlbpromotion
+    namespace: ${NAMESPACE}
+  spec:
+    source:
+      type: Git
+      git:
+        uri: ${SOURCE_REPOSITORY_URL}
+        ref: ${SOURCE_REPOSITORY_REF}
+      sourceSecret:
+        name: git-secret
+      contextDir: ${CONTEXT_DIR} 
+    triggers:
+    - type: ConfigChange
+    strategy:
+      type: JenkinsPipeline
+      jenkinsPipelineStrategy:
+        jenkinsfilePath: Jenkinsfile-dvlb-Promotion
+parameters:
+- description: The name assigned to all of the frontend objects defined in this template.
+  displayName: APPLICATION_NAME
+  name: APPLICATION_NAME
+  required: true
+- description: The OpenShift Namespace where the ImageStream resides.
+  displayName: Namespace
+  name: NAMESPACE
+  required: true
+- description: Path within Git project to build; empty for root project directory.
+  name: CONTEXT_DIR
+  value:
+- description: Version of NGINX image to be used (1.12 by default).
+  displayName: NGINX Version
+  name: NGINX_VERSION
+  required: true
+- description: The URL of the repository with your application source code.
+  displayName: Git Repository URL
+  name: SOURCE_REPOSITORY_URL
+  required: true
+- description: Set this to a branch name, tag or other ref of your repository if you
+    are not using the default branch.
+  displayName: Git Reference
+  name: SOURCE_REPOSITORY_REF
+  required: true
+- description: Path within Git project pointing to the pipeline run script
+  name: PIPELINE_SCRIPT
+  required: true

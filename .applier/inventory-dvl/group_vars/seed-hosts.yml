@@ -1,0 +1,6 @@
+openshift_cluster_content:
+- object: route
+  content:
+  - name: "create route"
+    template: "{{ inventory_dir }}/../../.openshift/templates/alldeploy/dvl-tls-route.yml"
+    params: "{{ inventory_dir }}/../../.openshift/params/dvl/alldeploy/route-dvl"

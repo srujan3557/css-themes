@@ -1,0 +1,6 @@
+APPLICATION_NAME=omnipro-custfrnt-inta
+NAMESPACE=res-omnipro-int
+READINESS_RESPONSE=Alive
+MEMORY_LIMIT=256Mi
+VERSION=v1
+APIURL=http://resomnipro-custdashboardbff-dvla.res-omnipro-dvl.svc:8443/

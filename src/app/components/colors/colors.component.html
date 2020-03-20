@@ -1,0 +1,95 @@
+<div id="colors" class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Interface</h1>
+        <!-- Primary Palette -->
+        <h4>Primary Palette: <pre>Color Classname: primary-### & Background Color Classname: bg-primary-###</pre></h4><hr>
+        <span class="box bg-primary-100 white">100</span>
+        <span class="box bg-primary-200 white">200</span>
+        <span class="box bg-primary-300 white">300</span>
+        <span class="box bg-primary-400 white">400</span>
+        <span class="box bg-primary-500 white">500</span>
+        <span class="box bg-primary-600 white">600</span>
+        <!-- Secondary Palette -->
+        <h4>Secondary Palette: <pre>Color Classname: secondary-### & Background Color Classname: bg-secondary-###</pre></h4><hr>
+        <span class="box bg-white border">bg-white</span>
+        <span class="box bg-secondary-100 white">100</span>
+        <span class="box bg-secondary-200 white">200</span>
+        <span class="box bg-secondary-300 white">300</span>
+        <span class="box bg-secondary-400 white">400</span>
+        <span class="box bg-secondary-500 white">500</span>
+        <span class="box bg-secondary-600 white">600</span>
+      </div>
+      <div class="col-md-3">
+        <h4>Indigo Palette: <pre>Color: indigo-100</pre>
+          <pre>& Background color: bg-indigo-100</pre></h4><hr>
+        <span class="box bg-indigo-100 white">100</span>
+      </div>
+      <div class="col-md-3">
+        <h4>Red Palette: <pre>Color: red-100/200 </pre>
+          <pre>& Background Color: bg-red-100/200</pre></h4><hr>
+        <span class="box bg-red-100 white">100</span>
+        <span class="box bg-red-200 white">200</span>
+      </div>
+      <div class="col-md-6">
+        <h4>Notification Palette: <pre>success, info, warning, danger </pre>
+          <pre> & Background Color Classname: bg-success, bg-info, bg-warning, bg-danger</pre></h4><hr>
+        <span class="box bg-success success">###</span>
+        <span class="box bg-info info">###</span>
+        <span class="box bg-warning warning">###</span>
+        <span class="box bg-danger danger">###</span>
+      </div>
+      <div class="col-md-12">
+        <h4>Credit Cards Palette: <pre>Blue: 100, Gold: 200, Platinum: 300, Reserve: 400 </pre>
+          <pre> & Background Color Classname: bg-credit-card-###</pre></h4><hr>
+        <span class="box bg-credit-card-100 white">100</span>
+        <span class="box bg-credit-card-200 white">200</span>
+        <span class="box bg-credit-card-300 white">300</span>
+        <span class="box bg-credit-card-400 white">400</span>
+      </div>
+      <div class="col-md-6" *ngIf="currentSettings[0].loyaltyTiers[0]">
+        <h1>Status</h1>
+        <h4>{{ currentSettings[0].loyaltyTiers[0].name }} Palette: <pre>Color Classname: loyalty-tier1-### & Background Color Classname: bg-loyalty-tier1-### </pre></h4><hr>
+        <span class="box bg-loyalty-tier1-100 white">100</span>
+        <span class="box bg-loyalty-tier1-200 white">200</span>
+        <span class="box bg-loyalty-tier1-300 white">300</span>
+        <span class="box bg-loyalty-tier1-400 white">400</span>
+      </div>
+      <div class="col-md-6" *ngIf="currentSettings[0].loyaltyTiers[1]">
+        <h1>&nbsp;</h1>
+        <h4>{{ currentSettings[0].loyaltyTiers[1].name }} Palette: <pre>Color Classname: loyalty-tier2-### & Background Color Classname: bg-loyalty-tier2-### </pre></h4><hr>
+        <span class="box bg-loyalty-tier2-100 white">100</span>
+        <span class="box bg-loyalty-tier2-200 white">200</span>
+        <span class="box bg-loyalty-tier2-300 white">300</span>
+        <span class="box bg-loyalty-tier2-400 white">400</span>
+      </div>
+      <div class="col-md-6" *ngIf="currentSettings[0].loyaltyTiers[2]" >
+        <h4>{{ currentSettings[0].loyaltyTiers[2].name }} Palette: <pre>Color Classname: loyalty-tier3-### & Background Color Classname: bg-loyalty-tier3-### </pre></h4><hr>
+        <span class="box bg-loyalty-tier3-100 white">100</span>
+        <span class="box bg-loyalty-tier3-200 white">200</span>
+        <span class="box bg-loyalty-tier3-300 white">300</span>
+        <span class="box bg-loyalty-tier3-400 white">400</span>
+      </div>
+      <div class="col-md-6" *ngIf="currentSettings[0].loyaltyTiers[3]">
+        <h4>{{ currentSettings[0].loyaltyTiers[3].name }} Palette: <pre>Color Classname: loyalty-tier4-### & Background Color Classname: bg-loyalty-tier4-### </pre></h4><hr>
+        <span class="box bg-loyalty-tier4-100 white">100</span>
+        <span class="box bg-loyalty-tier4-200 white">200</span>
+        <span class="box bg-loyalty-tier4-300 white">300</span>
+        <span class="box bg-loyalty-tier4-400 white">400</span>
+      </div>
+      <div class="col-md-6" *ngIf="currentSettings[0].loyaltyTiers[4]">
+        <h4>{{ currentSettings[0].loyaltyTiers[4].name }} Palette: <pre>Color Classname: loyalty-tier5-### & Background Color Classname: bg-loyalty-tier5-### </pre></h4><hr>
+        <span class="box bg-loyalty-tier5-100 white">100</span>
+        <span class="box bg-loyalty-tier5-200 white">200</span>
+        <span class="box bg-loyalty-tier5-300 white">300</span>
+        <span class="box bg-loyalty-tier5-400 white">400</span>
+      </div>
+      <div class="col-md-6" *ngIf="currentSettings[0].loyaltyTiers[5]">
+        <h4>{{ currentSettings[0].loyaltyTiers[5].name }} Palette: <pre>Color Classname: loyalty-tier6-### & Background Color Classname: bg-loyalty-tier6-### </pre></h4><hr>
+        <span class="box bg-loyalty-tier6-100 white">100</span>
+        <span class="box bg-loyalty-tier6-200 white">200</span>
+        <span class="box bg-loyalty-tier6-300 white">300</span>
+        <span class="box bg-loyalty-tier6-400 white">400</span>
+      </div>
+    </div>
+</div>

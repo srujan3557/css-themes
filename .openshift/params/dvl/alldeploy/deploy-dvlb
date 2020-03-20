@@ -1,0 +1,6 @@
+APPLICATION_NAME=omnipro-custfrnt-dvlb
+NAMESPACE=res-omnipro-dvl
+READINESS_RESPONSE=Alive
+MEMORY_LIMIT=256Mi
+VERSION=v2
+APIURL=http://resomnipro-custdashboardbff-dvlb.res-omnipro-dvl.svc:8443/

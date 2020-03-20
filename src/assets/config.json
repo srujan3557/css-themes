@@ -1,0 +1,9 @@
+{
+    "applicationName": "CSS Themes Example",
+    "description": "This application demonstrates the CSS Theming with SASS",
+    "INJECT_KEYS": {
+      "delta": "/assets/aem-templates/delta.json",
+      "contrast": "/assets/aem-templates/contrast.json",
+      "virgin": "/assets/aem-templates/virgin.json"
+    }
+}

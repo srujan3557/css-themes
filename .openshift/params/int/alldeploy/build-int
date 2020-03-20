@@ -1,0 +1,6 @@
+APPLICATION_NAME=omnipro-csstheme
+NAMESPACE=res-omnipro-build
+SOURCE_REPOSITORY_URL=https://git.delta.com/omnipro/ResOmniPro-CustDashboardBFF.git
+SOURCE_REPOSITORY_REF=multideploydvl
+PIPELINE_SCRIPT=Jenkinsfile
+NGINX_VERSION=1

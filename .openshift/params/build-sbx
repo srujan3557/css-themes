@@ -1,0 +1,3 @@
+SOURCE_REPOSITORY_URL=https://git.delta.com/omnipro/ResOmniPro-CustDashboardFrontEnd.git
+SOURCE_REPOSITORY_REF=add-nginx
+NAMESPACE=sbx-853485

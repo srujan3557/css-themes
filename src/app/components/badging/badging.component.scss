@@ -1,0 +1,26 @@
+#badging {
+    background-color: #bbb;
+
+    h3 {
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+    }
+
+    ul {
+        margin-left: -35px;
+        list-style-type: none;
+    }
+    
+    ul > li {
+      padding: 10px;
+    }
+
+    .badge-label {
+        padding-left: 30px;
+    }
+
+    .bg-color {
+        background-color: var(--primaryColor);
+    }
+}
+

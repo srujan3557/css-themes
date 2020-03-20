@@ -1,0 +1,4 @@
+APPLICATION_NAME=omnipro-custfrnt-inta
+NAMESPACE=res-omnipro-int
+HOSTNAME_HTTP=cdbfrndemo-res-omnipro-inta.int1apps.paassi.delta.com 
+PATH=/custfrnt

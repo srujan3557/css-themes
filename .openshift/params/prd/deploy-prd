@@ -1,0 +1,9 @@
+APPLICATION_NAME=resomnipro-custdashboardbff
+NAMESPACE=
+SA_NAME=
+SA_NAMESPACE=
+READINESS_RESPONSE="Customer Service is alive!"
+READINESS_PATH=/OmniProCustomerAPI/1.0.0/checkHealth
+HOSTNAME_HTTP=resomniprosecure-custdashboardbff-res-omnipro-1-sbx.sbx2apps.paasdev.delta.com
+MEMORY_LIMIT=2Gi
+

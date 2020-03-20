@@ -1,0 +1,121 @@
+---
+apiVersion: v1
+kind: Template
+labels:
+  template: omnipro-csstheme
+metadata:
+  annotations:
+    iconClass: icon-nginx
+    tags: quickstart,nginx
+  name: omnipro-csstheme
+objects:
+- apiVersion: v1
+  kind: DeploymentConfig
+  metadata:
+    labels:
+      application: ${APPLICATION_NAME}
+    name: ${APPLICATION_NAME}
+    namespace: ${NAMESPACE}
+  spec:
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      app: ${APPLICATION_NAME}
+      deploymentconfig: ${APPLICATION_NAME}
+    strategy:
+      activeDeadlineSeconds: 21600
+      resources: {}
+      rollingParams:
+        intervalSeconds: 1
+        maxSurge: 25%
+        maxUnavailable: 25%
+        timeoutSeconds: 600
+        updatePeriodSeconds: 1
+      type: Rolling
+    template:
+      metadata:
+        labels:
+          app: ${APPLICATION_NAME}
+          deploymentconfig: ${APPLICATION_NAME}
+      spec:
+        containers:
+        - env:
+          image: "${NAMESPACE}/${APPLICATION_NAME}"
+          imagePullPolicy: Always
+          name: ${APPLICATION_NAME}
+          resources:
+            limits:
+              memory: "${MEMORY_LIMIT}"
+          volumeMounts:
+          - name: cert-volume
+            mountPath: /etc/opt/rh/rh-nginx112/nginx/certs/
+            readOnly: true
+          ports:
+          - containerPort: 8443
+            protocol: TCP
+          readinessProbe:
+            exec:
+              command:
+              - /bin/bash
+              - -c
+              - curl -s 'http://localhost:8443/checkhealth'
+                |grep -iq 'checkhealth'
+          terminationMessagePath: /dev/termination-log # Container termination message
+          terminationMessagePolicy: File # Type of termination message
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+        volumes:
+        - name: cert-volume
+          secret:
+            secretName: ${APPLICATION_NAME}-certificate
+    test: false
+    triggers:
+    - type: ImageChange
+      imageChangeParams:
+        automatic: true
+        containerNames:
+        - ${APPLICATION_NAME}
+        from:
+          kind: ImageStreamTag
+          name: ${APPLICATION_NAME}:${VERSION}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      description: Exposes and load balances the application pods
+      openshift.io/cert-ops-status: need
+    name: "${APPLICATION_NAME}"
+  spec:
+    ports:
+    - name: web
+      port: 8443
+      protocol: TCP
+      targetPort: 8443
+    selector:
+      app: ${APPLICATION_NAME}
+      deploymentconfig: ${APPLICATION_NAME}
+    sessionAffinity: None
+    type: ClusterIP
+parameters:
+- description: The name assigned to all of the frontend objects defined in this template.
+  displayName: Name
+  name: APPLICATION_NAME
+  required: true
+- description: Maximum amount of memory the container can use.
+  displayName: Memory Limit
+  name: MEMORY_LIMIT
+  required: true
+- description: 'String value expected back from readiness check'
+  name: READINESS_RESPONSE
+  required: true
+- description: The OpenShift Namespace where the ImageStream resides.
+  displayName: Namespace
+  name: NAMESPACE
+  required: true
+- description: The OpenShift VERSION where the ImageStream resides.
+  displayName: VERSION
+  name: VERSION
+  required: true

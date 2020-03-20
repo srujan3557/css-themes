@@ -1,0 +1,495 @@
+/*** COLOR PALLETE ***/
+
+.high-contrast {
+    color: var(--high-contrastColor) !important;
+}
+
+.transparent {
+    color: transparent;
+}
+.white {
+    color: #FFF;
+}
+.black {
+    color: #000;
+}
+.indigo-100 {
+    color: #0B1F66
+}
+.red-100 {
+    color: #DF1836;
+}
+.red-200 {
+    color: #8C0F22;
+}
+
+.primary-100 {
+    color: var(--primaryColor-100); // #C8CBD9
+}
+.primary-200 {
+    color: var(--primaryColor-200); // #7E8499
+}
+.primary-300 {
+    color: var(--primaryColor-300); // #646E8D
+}
+.primary-400 {
+    color: var(--primaryColor-400); // #343D63
+}
+.primary-500 {
+    color: var(--primaryColor-500); // #29304E
+}
+.primary-600 {
+    color: var(--primaryColor-600); // #18203D
+}
+
+.secondary-100 {
+    color: var(--secondaryColor-100); // #F8F8FA
+}
+.secondary-200 {
+    color: var(--secondaryColor-200); // #F0F0F2
+}
+.secondary-300 {
+    color: var(--secondaryColor-300); // #E4E4E6
+}
+.secondary-400 {
+    color: var(--secondaryColor-400); //#A3A6B1
+}
+.secondary-500 {
+    color: var(--secondaryColor-500); //#656A7B
+}
+.secondary-600 {
+    color: var(--secondaryColor-600);
+}
+
+.success {
+    color: var(--notification-success); // #008A00;
+}
+.info {
+    color: var(--notification-info); // #4470C3;
+}
+.warning {
+    color: var(--notification-warning); //#E14B00;
+}
+.danger {
+    color: var(--notification-danger); // #DF1836;
+}
+
+// Delta 360
+.loyalty-tier1-100 {
+    color: var(--loyalty-tier1-100); // #8D8E91;
+}
+.loyalty-tier1-200 {
+    color: var(--loyalty-tier1-200); // #68686B;
+}
+.loyalty-tier1-300 {
+    color: var(--loyalty-tier1-300); // #383838;
+}
+.loyalty-tier1-400 {
+    color: var(--loyalty-tier1-400); // #000;
+}
+
+// Diamond
+.loyalty-tier2-100 {
+    color: var(--loyalty-tier2-100); // #6590AD;
+}
+.loyalty-tier2-200 {
+    color: var(--loyalty-tier2-200); // #4B718C;
+}
+.loyalty-tier2-300 {
+    color: var(--loyalty-tier2-300); // #345064;  
+}
+.loyalty-tier2-400 {
+    color: var(--loyalty-tier2-400); // #182F3E;
+}
+
+// Platinum
+.loyalty-tier3-100 {
+    color: var(--loyalty-tier3-100); // #8973B1;
+}
+.loyalty-tier3-200 {
+    color: var(--loyalty-tier3-200); // #644F8B;
+}
+.loyalty-tier3-300 {
+    color: var(--loyalty-tier3-300); // #393248;  
+}
+.loyalty-tier3-400 {
+    color: var(--loyalty-tier3-400); // #16131D;
+}
+
+// GOLD
+.loyalty-tier4-100 {
+    color: var(--loyalty-tier4-100); // #C7883B;
+}
+.loyalty-tier4-200 {
+    color: var(--loyalty-tier4-200); //#9F6A29;
+}
+.loyalty-tier4-300 {
+    color: var(--loyalty-tier4-300); // #864F0C;  
+}
+.loyalty-tier4-400 {
+    color: var(--loyalty-tier4-400); // #472B12;
+}
+
+// Silver
+.loyalty-tier5-100 {
+    color: var(--loyalty-tier5-100); // #A3A4A8;
+}
+.loyalty-tier5-200 {
+    color: var(--loyalty-tier5-200); // #7A7B80;
+}
+.loyalty-tier5-300 {
+    color: var(--loyalty-tier5-300); // #494A4D;  
+}
+.loyalty-tier5-400 {
+    color: var(--loyalty-tier5-400); // #2D2D2E;
+}
+
+// Skymiles
+.loyalty-tier6-100 {
+    color: var(--loyalty-tier6-100); // #5261A1;
+}
+.loyalty-tier6-200 {
+    color: var(--loyalty-tier6-200); // #33478C;
+}
+.loyalty-tier6-300 {
+    color: var(--loyalty-tier6-300); // #1F2C59;  
+}
+.loyalty-tier6-400 {
+    color: var(--loyalty-tier6-400); // #0D1840;
+}
+
+/*** Badges Loyalty Color Palette ***/
+// Delta 360
+.loyalty-badge-tier1-100 {
+    color: var(--loyalty-badge-tier1-100); // #8D8E91;
+}
+.loyalty-badge-tier1-200 {
+    color: var(--loyalty-badge-tier1-200); // #68686B;
+}
+.loyalty-badge-tier1-300 {
+    color: var(--loyalty-badge-tier1-300); // #383838;
+}
+.loyalty-badge-tier1-400 {
+    color: var(--loyalty-badge-tier1-400); // #000;
+}
+
+// Diamond
+.loyalty-badge-tier2-100 {
+    color: var(--loyalty-badge-tier2-100); // #6590AD;
+}
+.loyalty-badge-tier2-200 {
+    color: var(--loyalty-badge-tier2-200); // #4B718C;
+}
+.loyalty-badge-tier2-300 {
+    color: var(--loyalty-badge-tier2-300); // #345064;  
+}
+.loyalty-badge-tier2-400 {
+    color: var(--loyalty-badge-tier2-400); // #182F3E;
+}
+
+// Platinum
+.loyalty-badge-tier3-100 {
+    color: var(--loyalty-badge-tier3-100); // #8973B1;
+}
+.loyalty-badge-tier3-200 {
+    color: var(--loyalty-badge-tier3-200); // #644F8B;
+}
+.loyalty-badge-tier3-300 {
+    color: var(--loyalty-badge-tier3-300); // #393248;  
+}
+.loyalty-badge-tier3-400 {
+    color: var(--loyalty-badge-tier3-400); // #16131D;
+}
+
+// GOLD
+.loyalty-badge-tier4-100 {
+    color: var(--loyalty-badge-tier4-100); // #C7883B;
+}
+.loyalty-badge-tier4-200 {
+    color: var(--loyalty-badge-tier4-200); //#9F6A29;
+}
+.loyalty-badge-tier4-300 {
+    color: var(--loyalty-badge-tier4-300); // #864F0C;  
+}
+.loyalty-badge-tier4-400 {
+    color: var(--loyalty-badge-tier4-400); // #472B12;
+}
+
+// Silver
+.loyalty-badge-tier5-100 {
+    color: var(--loyalty-badge-tier5-100); // #A3A4A8;
+}
+.loyalty-badge-tier5-200 {
+    color: var(--loyalty-badge-tier5-200); // #7A7B80;
+}
+.loyalty-badge-tier5-300 {
+    color: var(--loyalty-badge-tier5-300); // #494A4D;  
+}
+.loyalty-badge-tier5-400 {
+    color: var(--loyalty-badge-tier5-400); // #2D2D2E;
+}
+
+// Skymiles
+.loyalty-badge-tier6-100 {
+    color: var(--loyalty-badge-tier6-100); // #5261A1;
+}
+.loyalty-badge-tier6-200 {
+    color: var(--loyalty-badge-tier6-200); // #33478C;
+}
+.loyalty-badge-badge-tier6-300 {
+    color: var(--loyalty-badge-tier6-300); // #1F2C59;  
+}
+.loyalty-badge-tier6-400 {
+    color: var(--loyalty-badge-tier6-400); // #0D1840;
+}
+
+/*** Background Color Palette ***/
+.bg-transparent {
+    background-color: transparent;
+}
+.bg-white {
+    background-color: #fff;
+}
+.bg-secondary-100 {
+    background-color: var(--secondaryColor-100); // #F8F8FA
+}
+.bg-secondary-200 {
+    background-color: var(--secondaryColor-200); // #F0F0F2
+}
+.bg-secondary-300 {
+    background-color: var(--secondaryColor-300); // #E4E4E6
+}
+.bg-secondary-400 {
+    background-color: var(--secondaryColor-400); // #A3A6B1
+}
+.bg-secondary-500 {
+    background-color: var(--secondaryColor-500); // #656A7B
+}
+.bg-secondary-600 {
+    background-color: var(--secondaryColor-600); // #4E5260
+}
+
+.bg-primary-100 {
+    background-color: var(--primaryColor-100); // #C8CBD9
+}
+.bg-primary-200 {
+    background-color: var(--primaryColor-200); // #7E8499
+}
+.bg-primary-300 {
+    background-color: var(--primaryColor-300); // #646E8D
+}
+.bg-primary-400 {
+    background-color: var(--primaryColor-400); // #343D63
+}
+.bg-primary-500 {
+    background-color: var(--primaryColor-500); // #29304E
+}
+.bg-primary-600 {
+    background-color: var(--primaryColor-600); // #18203D
+}
+
+.bg-indigo-100 {
+    background-color: #0B1F66
+}
+
+.bg-red-100 {
+    background-color: #DF1836;
+}
+.bg-red-200 {
+    background-color: #8C0F22;
+}
+
+.bg-success {
+    background-color: var(--notification-success); // #008A00;
+}
+.bg-info {
+    background-color: var(--notification-info); // #4470C3;
+}
+.bg-warning {
+    background-color: var(--notification-warning); // #E14B00;
+}
+.bg-danger {
+    background-color: var(--notification-danger); // #DF1836;
+}
+
+// Delta 360 
+.bg-loyalty-tier1-100 {
+    background-color: var(--loyalty-tier1-100); // #8D8E91;
+}
+.bg-loyalty-tier1-200 {
+    background-color: var(--loyalty-tier1-200); // #68686B;
+}
+.bg-loyalty-tier1-300 {
+    background-color: var(--loyalty-tier1-300); // #383838;
+}
+.bg-loyalty-tier1-400 {
+    background-color: var(--loyalty-tier1-400); // #000;
+}
+
+// Diamond
+.bg-loyalty-tier2-100 {
+    background-color: var(--loyalty-tier2-100); // #6590AD;
+}
+.bg-loyalty-tier2-200 {
+    background-color: var(--loyalty-tier2-200); // #4B718C;
+}
+.bg-loyalty-tier2-300 {
+    background-color: var(--loyalty-tier2-300); // #345064;  
+}
+.bg-loyalty-tier2-400 {
+    background-color: var(--loyalty-tier2-400); // #182F3E;
+}
+
+// Platinum
+.bg-loyalty-tier3-100 {
+    background-color: var(--loyalty-tier3-100); // #8973B1;
+}
+.bg-loyalty-tier3-200 {
+    background-color: var(--loyalty-tier3-200); // #644F8B;
+}
+.bg-loyalty-tier3-300 {
+    background-color: var(--loyalty-tier3-300); // #393248;  
+}
+.bg-loyalty-tier3-400 {
+    background-color: var(--loyalty-tier3-400); // #16131D;
+}
+
+// Gold
+.bg-loyalty-tier4-100 {
+    background-color: var(--loyalty-tier4-100); // #C7883B;
+}
+.bg-loyalty-tier4-200 {
+    background-color: var(--loyalty-tier4-200); // #9F6A29;
+}
+.bg-loyalty-tier4-300 {
+    background-color: var(--loyalty-tier4-300); // #864F0C;  
+}
+.bg-loyalty-tier4-400 {
+    background-color: var(--loyalty-tier4-400); // #472B12;
+}
+
+// Silver
+.bg-loyalty-tier5-100 {
+    background-color: var(--loyalty-tier5-100); // #A3A4A8;
+}
+.bg-loyalty-tier5-200 {
+    background-color: var(--loyalty-tier5-200); // #7A7B80;
+}
+.bg-loyalty-tier5-300 {
+    background-color: var(--loyalty-tier5-300); //  #494A4D;  
+}
+.bg-loyalty-tier5-400 {
+    background-color: var(--loyalty-tier5-400); // #2D2D2E;
+}
+
+// Skymiles
+.bg-loyalty-tier6-100 {
+    background-color: var(--loyalty-tier6-100); // #5261A1;
+}
+.bg-loyalty-tier6-200 {
+    background-color: var(--loyalty-tier6-200); // #33478C;
+}
+.bg-loyalty-tier6-300 {
+    background-color: var(--loyalty-tier6-300); // #1F2C59;  
+}
+.bg-loyalty-tier6-400 {
+    background-color: var(--loyalty-tier6-400); // #0D1840;
+}
+
+/*** Badges Background Color Pallete ***/
+// Delta 360 
+.bg-loyalty-badge-tier1-100 {
+    background-color: var(--loyalty-badge-tier1-100); // #8D8E91;
+}
+.bg-loyalty-badge-tier1-200 {
+    background-color: var(--loyalty-badge-tier1-200); // #68686B;
+}
+.bg-loyalty-badge-tier1-300 {
+    background-color: var(--loyalty-badge-tier1-300); // #383838;
+}
+.bg-loyalty-badge-tier1-400 {
+    background-color: var(--loyalty-badge-tier1-400); // #000;
+}
+
+// Diamond
+.bg-loyalty-badge-tier2-100 {
+    background-color: var(--loyalty-badge-tier2-100); // #6590AD;
+}
+.bg-loyalty-badge-tier2-200 {
+    background-color: var(--loyalty-badge-tier2-200); // #4B718C;
+}
+.bg-loyalty-badge-tier2-300 {
+    background-color: var(--loyalty-badge-tier2-300); // #345064;  
+}
+.bg-loyalty-badge-tier2-400 {
+    background-color: var(--loyalty-badge-tier2-400); // #182F3E;
+}
+
+// Platinum
+.bg-loyalty-badge-tier3-100 {
+    background-color: var(--loyalty-badge-tier3-100); // #8973B1;
+}
+.bg-loyalty-badge-tier3-200 {
+    background-color: var(--loyalty-badge-tier3-200); // #644F8B;
+}
+.bg-loyalty-badge-tier3-300 {
+    background-color: var(--loyalty-badge-tier3-300); // #393248;  
+}
+.bg-loyalty-badge-tier3-400 {
+    background-color: var(--loyalty-badge-tier3-400); // #16131D;
+}
+
+// Gold
+.bg-loyalty-badge-tier4-100 {
+    background-color: var(--loyalty-badge-tier4-100); // #C7883B;
+}
+.bg-loyalty-badge-tier4-200 {
+    background-color: var(--loyalty-badge-tier4-200); // #9F6A29;
+}
+.bg-loyalty-badge-tier4-300 {
+    background-color: var(--loyalty-badge-tier4-300); // #864F0C;  
+}
+.bg-loyalty-badge-tier4-400 {
+    background-color: var(--loyalty-badge-tier4-400); // #472B12;
+}
+
+// Silver
+.bg-loyalty-badge-tier5-100 {
+    background-color: var(--loyalty-badge-tier5-100); // #A3A4A8;
+}
+.bg-loyalty-badge-tier5-200 {
+    background-color: var(--loyalty-badge-tier5-200); // #7A7B80;
+}
+.bg-loyalty-badge-tier5-300 {
+    background-color: var(--loyalty-badge-tier5-300); //  #494A4D;  
+}
+.bg-loyalty-badge-tier5-400 {
+    background-color: var(--loyalty-badge-tier5-400); // #2D2D2E;
+}
+
+// Skymiles
+.bg-loyalty-badge-tier6-100 {
+    background-color: var(--loyalty-badge-tier6-100); // #5261A1;
+}
+.bg-loyalty-badge-tier6-200 {
+    background-color: var(--loyalty-badge-tier6-200); // #33478C;
+}
+.bg-loyalty-badge-tier6-300 {
+    background-color: var(--loyalty-badge-tier6-300); // #1F2C59;  
+}
+.bg-loyalty-badge-tier6-400 {
+    background-color: var(--loyalty-badge-tier6-400); // #0D1840;
+}
+
+.bg-credit-card-100 {
+    background-color: var(--credit-card-100); // #4470C3;
+}
+.bg-credit-card-200 {
+    background-color: var(--credit-card-200); // #9F6A29;
+}
+.bg-credit-card-300 {
+    background-color: var(--credit-card-300); // #644F8B;
+}
+.bg-credit-card-400 {
+    background-color: var(--credit-card-400); // #135E6C;
+}

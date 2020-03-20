@@ -1,0 +1,5 @@
+APPLICATION_NAME=resomnipro-custdashboardbff
+NAMESPACE=
+HOSTNAME_HTTP=bkd-sbx-853485.sbx2apps.paasdev.delta.com
+APPLICATION_NAME_MANAGEMENT=resomnipro-custdashboardbffactuator
+HOSTNAME_HTTP_MANAGEMENT=bkdactuator-sbx-853485.sbx2apps.paasdev.delta.com

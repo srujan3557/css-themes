@@ -1,0 +1,11 @@
+openshift_cluster_content:
+- object: deployments
+  content:
+  - name: "deploy dvl environment"
+    template: "{{ inventory_dir }}/../../.openshift/templates/alldeploy/deploy.yml"
+    params: "{{ inventory_dir }}/../../.openshift/params/dvl/alldeploy/deploy-dvla"
+- object: route
+  content:
+  - name: "create route"
+    template: "{{ inventory_dir }}/../../.openshift/templates/alldeploy/dvla-tls-route.yml"
+    params: "{{ inventory_dir }}/../../.openshift/params/dvl/alldeploy/route-dvla"

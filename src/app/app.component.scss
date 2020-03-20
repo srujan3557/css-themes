@@ -1,0 +1,39 @@
+.settings {
+    border: 2px solid;
+    border-radius: 4px 0 0 4px;
+    width: auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #18203D;
+    position: fixed;
+    z-index: 10;
+    top: 13%;
+    right: 0;
+
+    .settings__icon {
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+/***  Example Content ***/
+.ex-parent {
+
+    background-color: var(--primaryColor-600);
+    color: var(--secondaryColor-100);
+    padding: 40px;
+    border-radius: var(--borderRadius);
+    
+    h1 {
+        padding: 40px 20px 0;
+    }
+
+    .ex-parent__logo {
+        width: var(--logoWidth);
+        height: var(--logoHeight);
+        margin: 0 auto;
+        background-image: var(--logoUrl);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,4 @@
+APPLICATION_NAME=omnipro-csstheme
+NAMESPACE=res-omnipro-dvl
+HOSTNAME_HTTP=omnipro-dvl.delta.com
+PATH=/custfrnt

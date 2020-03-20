@@ -1,0 +1,4 @@
+APPLICATION_NAME=resomnipro-custdashboardbff
+NAMESPACE=
+SOURCE_REPOSITORY_URL=https://git.delta.com/omnipro/ResOmniPro-CustDashboardBFF.git
+SOURCE_REPOSITORY_REF=master

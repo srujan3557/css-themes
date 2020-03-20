@@ -1,0 +1,4 @@
+APPLICATION_NAME=omnipro-custfrnt-dvla
+NAMESPACE=res-omnipro-dvl
+HOSTNAME_HTTP=cdbfrn-res-omnipro-dvla.dvl1apps.paasdev.delta.com
+PATH=/custfrnt

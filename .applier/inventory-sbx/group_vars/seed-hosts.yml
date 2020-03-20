@@ -1,0 +1,28 @@
+openshift_cluster_content:
+- object: git-secret
+  content:
+  - name: "create git secret"
+    template: "{{ inventory_dir }}/../../.openshift/templates/git-secret.yml"
+    params: "{{ inventory_dir }}/../../.openshift/params/git-secret"
+- object: deployments
+  content:
+  - name: "deploy sbx environment"
+    template: "{{ inventory_dir }}/../../.openshift/templates/deploy.yml"
+    params: "{{ inventory_dir }}/../../.openshift/params/deploy-sbx"
+- object: jenkins-delta
+  content:
+  - name: "deploy delta jenkins image"
+    template: openshift//jenkins-master-persistent-deploy-delta
+    params: "{{ inventory_dir }}/../../.openshift/params/delta-jenkins"
+    namespace: dev-tools-1-sbx
+- object: builds
+  content:
+  - name: "deploy build pipeline to dev"
+    template: "{{ inventory_dir }}/../../.openshift/templates/build.yml"
+    params: "{{ inventory_dir }}/../../.openshift/params/build-sbx"
+- object: route
+  content:
+  - name: "create route"
+    template: "{{ inventory_dir }}/../../.openshift/templates/route.yml"
+    params: "{{ inventory_dir }}/../../.openshift/params/route-sbx"
+
